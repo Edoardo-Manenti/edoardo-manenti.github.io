@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head> Edoardo Manenti: myPages</head>
+	<head>
+		<script src="donut.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Edoardo Manenti | My Portfolio</title>
+		<style>body {background-color: darkturquoise; font-family: Arial, Helvetica, sans-serif;} 
+				#myHeader {font-size: 5vw; font-style: italic;text-align: center;} 
+				#mySubHeader {font-size: 4vw; font-style: normal; text-align: center;} 
+				#donutText {display: block; margin-left: auto; margin-right: auto; background-color: rgb(8, 19, 19); color: white; width : 50%; font-family: monospace;}
+		</style>
+	</head>
+	<body onload="setup();">
+		<h1 id="myHeader"> Welcome, I'm Edoardo Manenti</h1>
+		<h1 id="mySubHeader">Let me introduce myself</h1>
+		<button style="display: block; margin-left: auto; margin-right: auto;" onclick="start();">Toggle Animation</button>
+		<div style="display: block; background-color: black;">	
+			<pre id="donutText"></pre>
+		</div>
+	</body>
 </html>
