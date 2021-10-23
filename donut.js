@@ -11,7 +11,7 @@ function setup(){
 
     var pre;
     var tmr1 = undefined;
-    pre = document.getElementById("donutText");
+    pre = document.getElementById("donut-pre");
 
     var A = PI/2;
     var B = 0;
