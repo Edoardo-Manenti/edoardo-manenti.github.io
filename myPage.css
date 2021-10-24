@@ -1,18 +1,91 @@
-
-.color1 {color: #422e2f;}
-.color2 {color: #604854;}
-.color3 {color: #956d72;}
-.color4 {color: #d7a9b0;}
-.color5 {color: #e0d0c8;}
-
-body{
+body {
     font-family: 'Roboto Slab', serif;
+    background-color:#25252a;
+}
+ 
+#fixed-header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    padding: 1% 3%;
+    top: 0;
+    left: 0;
+    background-color: #25252a;
+    font-size: 20px;
+}
+
+.nav-list-element {
+    color: whitesmoke;
+    margin: auto 5% auto 0;
+    margin-right: 5%;
+    text-decoration: none;
+}
+
+
+#logo {
+    margin-right: 48.5vw;
+    margin-left: auto;
+    width: 3vw;
+    height: 3vw;
+    background-color: oldlace;
+}
+
+#presentation {
+    height: 100vh;
+    padding: 1px;
+}
+
+#presentation-text {
+    width: 80%;
+    margin: 5vh auto auto;
+    padding: 1px;
+    overflow: auto;
+}
+
+#presentation-text h1 {
+    display: inline-block;
+    vertical-align: bottom;
+    margin:0 0 auto;
+    font-size: 10vh;
+    font-weight: 200;
+    color: oldlace;
+}
+
+#avatar {
+    overflow: hidden;
+    width: 50vw;
+    height: 50vw;
+    margin: 20vh auto 0 auto;
+    background-color: #f3f7fb;
+    border-radius: 50% 50%  33% 33%;
+    padding: 1.2% 1.2% 0;
+}
+
+#avatar img {
+    width: 103%;
+    height: auto;
+    margin-bottom: -4px;
+    transform: scaleX(-1);
+}
+
+#presentation-text p{
+   width: 100%;
+   margin: 0;
+   color: green; 
+   font-size: 6vh;
+}
+
+.scroll-down-container {
+   width: 20%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
 }
 
 .card-project {
     display: flex;
-    width: 70%;
-    margin: auto;
     padding: 8% 4%;
     background-color: #C4DBE0;
 }
@@ -99,3 +172,56 @@ body{
     border: 2px solid darkslategrey;
     margin: 0 0;
 }
+
+/* RESPONSIVE SECTION */
+
+
+ .chevron {
+	 position: absolute;
+	 width: 2.1rem;
+	 height: 0.48rem;
+	 opacity: 0;
+	 transform: scale(0.3);
+	 animation: move-chevron 3s ease-out infinite;
+}
+ .chevron:first-child {
+	 animation: move-chevron 3s ease-out 1s infinite;
+}
+ .chevron:nth-child(2) {
+	 animation: move-chevron 3s ease-out 2s infinite;
+}
+ .chevron:before, .chevron:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 height: 100%;
+	 width: 50%;
+	 background: white;
+}
+ .chevron:before {
+	 left: 0;
+	 transform: skewY(30deg);
+}
+ .chevron:after {
+	 right: 0;
+	 width: 50%;
+	 transform: skewY(-30deg);
+}
+ @keyframes move-chevron {
+	 25% {
+		 opacity: 1;
+	}
+	 33.3% {
+		 opacity: 1;
+		 transform: translateY(2.28rem);
+	}
+	 66.6% {
+		 opacity: 1;
+		 transform: translateY(3.12rem);
+	}
+	 100% {
+		 opacity: 0;
+		 transform: translateY(4.8rem) scale(0.5);
+	}
+}
+ 

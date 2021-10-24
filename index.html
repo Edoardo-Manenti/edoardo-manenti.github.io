@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="google-site-verification" content="143ozomNXa4HGaIpsxYO0G0xa5y5X_y3C9Xj2Bzl_nY" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -10,10 +11,23 @@
 		<title>Edoardo Manenti | My Portfolio</title>
 	</head>
 	<body onload="setup();">
-		<nav id="nav-bar">
-  			<a href="/html/">HOME</a> |
-  			<a href="/css/">CONTACT ME</a> 
-		</nav>
+		<header id=fixed-header>
+				<a class="nav-list-element" href="">My CV</a>
+				<a id="contact-me-link" class="nav-list-element" href="">Contact Me</a>
+				<div id="logo"></div>
+		</header>
+		<div id="presentation">
+			<div id="avatar"><img src="man.png" width="125vw"></div>
+			<div id="presentation-text">
+				<h1>Hi!,</h1>
+				<p>My name is Edoardo</p>
+			</div>
+			<div class="scroll-down-container">
+ 	 			<div class="chevron"></div>
+ 	 			<div class="chevron"></div>
+ 	 			<div class="chevron"></div>
+			</div>
+		</div>
 		<div id="donut-card" class="card-project">
 			<!-- DONUT CARD HERE-->
 			<div id="desc-card-donut" class="desc-card">
@@ -25,16 +39,6 @@
 			</div>
 			<div id="content-card-donut" class="content-card">
 				<pre id="donut-pre"></pre>
-			</div>
-		</div>
-		<div id="ascii-conv-card" class="card-project">
-			<!-- ASCII CONVERTER HERE-->
-			<div id="desc-card-ascii" class="desc-card">
-				<h1 class="card-title"><b>ASCII image converter</b></h1>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-			</div>
-			<div id="content-card-ascii" class="content-card">
-				<img id="ascii-img" src="woody_ex.png">
 			</div>
 		</div>
 	</body>
