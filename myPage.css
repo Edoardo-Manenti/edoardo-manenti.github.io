@@ -9,6 +9,8 @@ body {
 
 #fixed-header {
     display: flex;
+    justify-content: center;
+    column-gap: 5vw;
     box-sizing: border-box;
     width: 100%;
     top: 0;
@@ -16,17 +18,15 @@ body {
     position: fixed;
     border-radius: 0 0 25% 25%;
     z-index: 2;
-    padding: 3% 6%;
     background-color: #3b3b3f;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .nav-list-element {
-    display: inline-block;
+    padding: 1rem;
     color: whitesmoke;
     text-decoration: none;
-    margin: auto auto;
 }
 
 #avatar {
@@ -83,8 +83,11 @@ body {
 }
 
 .scroll-down-container {
+   position:absolute;
    width: 20%;
-   margin: 0 auto;
+   margin: auto;
+   right:0; left:0;
+   bottom: 0;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -173,7 +176,32 @@ body {
     margin: 0 0;
 }
 
+
 /* RESPONSIVE SECTION */
+
+@media only screen and (min-width: 1000px) {
+
+    #fixed-heaeder {
+	height: 
+    }
+
+    #presentation {
+	padding-top: 25vh;
+	flex-direction: row-reverse;
+	justify-content: center;
+	column-gap: 2vw;
+    }
+
+    #avatar {
+	width: auto;
+    }
+
+    #presentation-text{
+	max-width: 40vw;
+	margin: 0;
+    }
+}
+
  .chevron {
 	 position: absolute;
 	 width: 2.1rem;
