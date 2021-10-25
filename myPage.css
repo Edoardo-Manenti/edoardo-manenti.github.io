@@ -99,6 +99,8 @@ body {
 
 .desc-card {
     display: flex;
+    box-sizing: border-box;
+    width: 95%;
     flex-direction: column;
     margin: 5vh auto;
     padding: 4% 4%;
@@ -119,7 +121,6 @@ body {
 
 #start-button {
     padding: 1vh 5vw;
-    font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
     margin:  auto;
     background-color: #2EB5E0;
@@ -143,27 +144,40 @@ body {
 
 .content-card {
     display: flex;
+    width: 95%;
     margin: 5vh auto;
+    box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 5px 10px 8px #74aab6;
-    padding:auto;
 }
 
+#content-card-donut {
+    background-color: darkslategrey;
+    padding: 5px;
+}
 
 #donut-pre {
-    font-size: 1.1vmax;
+    font-size: 5px;
+    text-align: center;
     background-color: darkslategrey;
     color: white;
+    width: 100%;
     border-radius: 8px;
     border: 2px solid darkslategrey;
     margin: 0 0;
 }
 
 /* RESPONSIVE SECTION */
-
+@media only screen and (max-width: 768) and (orientation: portrait){
+    #donut-pre {
+	font-size: 
 @media (orientation: landscape) {
     .card-project {
 	flex-direction: row;	    
+    }
+
+    #donut-pre {
+	font-size: calc();
     }
 }
 
