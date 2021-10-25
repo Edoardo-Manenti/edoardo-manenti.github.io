@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Roboto Slab', serif;
     background-color: #25252a;
+    box-sizing: border-box;
 }
 
 #fixed-header {
@@ -12,6 +13,7 @@ body {
     justify-content: center;
     column-gap: 5vw;
     box-sizing: border-box;
+    padding: 0 3vw;
     width: 100%;
     top: 0;
     left: 0;
@@ -19,7 +21,7 @@ body {
     border-radius: 0 0 25% 25%;
     z-index: 2;
     background-color: #3b3b3f;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -27,6 +29,38 @@ body {
     padding: 1rem;
     color: whitesmoke;
     text-decoration: none;
+}
+
+#presentation {
+    display:flex;
+    box-sizing: border-box;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20vh 1px 0;
+}
+
+#presentation-bg {
+    display:block;
+    position:absolute;
+    top: 0; left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+#presentation-bg img {
+    display:none;
+    position: relative;
+    top: 10vh;
+    left: 50vw;
+    width: 80vh;
+    height: 80vh;
+    opacity: 80%;
+    z-index: inherit;
+    filter: invert(42%) sepia(0%) saturate(0%) hue-rotate(163deg) 
+    			brightness(95%) contrast(84%);
 }
 
 #avatar {
@@ -52,17 +86,9 @@ body {
     z-index: 0;
 }
 
-#presentation {
-    display:flex;
-    box-sizing: border-box;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 20vh 1px 0;
-}
 
 #presentation-text {
     width: 80%;
-    height: 41vh;
     margin: 0 auto;
     padding: 1px;
     overflow: auto;
@@ -103,16 +129,15 @@ body {
 .card-project {
     display: flex;
     flex-direction: column;
-    padding: 4% 4%;
+    row-gap: 0;
+    padding: 8% 4%;
     background-color: #C4DBE0;
 }
 
 .desc-card {
     display: flex;
     box-sizing: border-box;
-    width: 95%;
     flex-direction: column;
-    margin: 5vh auto;
     padding: 4% 4%;
     background-color: whitesmoke;
     border: 2px solid white;
@@ -154,26 +179,25 @@ body {
 
 .content-card {
     display: flex;
-    width: 95%;
-    margin: 5vh auto;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 5px 10px 8px #74aab6;
 }
 
 #content-card-donut {
-    background-color: darkslategrey;
+    background-color: #181818;
     padding: 5px;
 }
 
 #donut-pre {
     font-size: 5px;
     text-align: center;
-    background-color: darkslategrey;
+    background-color: #181818;
     color: white;
     width: 100%;
     border-radius: 8px;
-    margin: 0 0;
+    margin: auto 0;
 }
 
 
@@ -181,8 +205,9 @@ body {
 
 @media only screen and (min-width: 1000px) {
 
-    #fixed-heaeder {
-	height: 
+    #fixed-header {
+	border-radius: 0; 
+	justify-content: left;
     }
 
     #presentation {
@@ -191,6 +216,8 @@ body {
 	justify-content: center;
 	column-gap: 2vw;
     }
+    
+    #presentation-bg img {display: initial;}
 
     #avatar {
 	width: auto;
@@ -199,6 +226,17 @@ body {
     #presentation-text{
 	max-width: 40vw;
 	margin: 0;
+    }
+
+    /* <--- ADD SCROLL DOWN TEXT --->*/
+
+    .card-project {
+	flex-direction: row;
+	column-gap: 0;
+    }
+
+    .desc-card, .content-card {
+	width: 50%;
     }
 }
 
