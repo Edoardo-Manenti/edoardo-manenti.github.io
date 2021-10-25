@@ -1,7 +1,7 @@
 function setup(){
     let PI = 3.1415;
     let WIDTH = 80;
-    let HIEGHT = 40;
+    let HEIGHT = 40;
     let R1 = 2;
     let R2 = 1;
     let theta_spacing = 0.07;
@@ -12,6 +12,12 @@ function setup(){
     var pre;
     var tmr1 = undefined;
     pre = document.getElementById("donut-pre");
+    
+    var magic_num = 1.75;
+    var pre_width = document.getElementById("content-card-donut").offsetWidth -5;
+    var font_size = pre_width*magic_num/80;
+    pre.setAttribute("style", "font-size: " + font_size + "px;");
+
 
     var A = PI/2;
     var B = 0;
@@ -23,7 +29,7 @@ function setup(){
         B += 0.03;
         var cA=Math.cos(A), sA=Math.sin(A);
         var cB=Math.cos(B), sB=Math.sin(B);
-        for(var k=0; k < WIDTH*HIEGHT; k++){
+        for(var k=0; k < WIDTH*HEIGHT; k++){
             output[k] = k%WIDTH == WIDTH-1 ? "\n" : " ";
             zbuffer[k] = 0;
         }
@@ -37,10 +43,10 @@ function setup(){
                 var t = sP*h*cA - sT*sA;
 
                 var x=0|(WIDTH/2 + k1*D*(cP*h*cB - t*sB)),
-                    y=0|(HIEGHT/2 + k1/2*D*(cP*h*sB + t*cB)),
+                    y=0|(HEIGHT/2 + k1/2*D*(cP*h*sB + t*cB)),
                     o=x+WIDTH*y,
                     N=0|(8*((sT*sA - sP*cT*cA)*cB - sP*cT*sA - sT*cA - cP*cT*sB));
-                if(y<HIEGHT && y>=0 && x>=0 && x<WIDTH-1 && D>zbuffer[o])
+                if(y<HEIGHT && y>=0 && x>=0 && x<WIDTH-1 && D>zbuffer[o])
                 {
                     zbuffer[o]=D;
                     output[o]=" .,-~:;=!*#$@"[N>0 ? N:0];
