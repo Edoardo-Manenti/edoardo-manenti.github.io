@@ -9,7 +9,8 @@ body {
 
 #fixed-header {
     display: flex;
-    width: 88%;
+    box-sizing: border-box;
+    width: 100%;
     top: 0;
     left: 0;
     position: fixed;
@@ -29,10 +30,15 @@ body {
 }
 
 #avatar {
+    width: 100%;
+    align-content: center;
+}
+
+#avatar div {
     overflow: hidden;
     width: 25vh;
     height: 25vh;
-    margin: 20vh auto 0 auto;
+    margin: 0 auto;
     background-color: #f3f7fb;
     border-radius: 50% 50%  33% 33%;
     padding: 1.2% 1.2% 0;
@@ -47,14 +53,17 @@ body {
 }
 
 #presentation {
+    display:flex;
+    box-sizing: border-box;
     min-height: 100vh;
-    padding: 1px;
+    flex-direction: column;
+    padding: 20vh 1px 0;
 }
 
 #presentation-text {
     width: 80%;
     height: 41vh;
-    margin: 0 auto auto;
+    margin: 0 auto;
     padding: 1px;
     overflow: auto;
 }
@@ -75,7 +84,6 @@ body {
 
 .scroll-down-container {
    width: 20%;
-   padding-bottom: 4vh;
    margin: 0 auto;
    display: flex;
    justify-content: center;
@@ -166,16 +174,6 @@ body {
 }
 
 /* RESPONSIVE SECTION */
-@media (orientation: landscape) {
-    .card-project {
-	flex-direction: row;	    
-    }
-
-    #donut-pre {
-	font-size: calc();
-    }
-}
-
  .chevron {
 	 position: absolute;
 	 width: 2.1rem;
@@ -193,7 +191,7 @@ body {
  .chevron:before, .chevron:after {
 	 content: '';
 	 position: absolute;
-	 top: 0;
+	 top: -5vh;
 	 height: 100%;
 	 width: 50%;
 	 background: white;
