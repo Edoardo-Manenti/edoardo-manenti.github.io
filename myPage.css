@@ -19,7 +19,7 @@ body {
     left: 0;
     position: fixed;
     border-radius: 0 0 25% 25%;
-    z-index: 2;
+    z-index: 100;
     background-color: #3b3b3f;
     font-size: 1.4rem;
     font-weight: 500;
@@ -128,31 +128,42 @@ body {
 
 .card-project {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 0;
-    width:80%;
-    margin: 5vh auto;
-    border-radius: 4%;
-    box-shadow: 9px 9px 20px 1px black;
+    column-gap: 10%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 5vh 5% 5vh 5%;
 }
 
-.desc-card {
+.card-project::-webkit-scrollbar {
     display: none;
-    /*display: flex;*/
+}
+
+.card {
+    flex: 0 0 auto;
+    position: relative;
+    width: 80%;
+    aspect-ratio: 1;
+    margin: auto 0;
     box-sizing: border-box;
+    border-radius: 5%;
+}
+
+#desc-card {
+    background-color: white;
+    display:flex;
     flex-direction: column;
-    padding: 4% 4%;
-    background-color: whitesmoke;
+    justify-content: center;
+    row-gap: 4%;
 }
 
-.desc-card h1 {
+#desc-card h1 {
     text-align: center;
-    font-size: 1.2rem; 
+    font-size: 1rem;
 }
 
-.desc-card p {
-    font-size: 1rem;
+#desc-card p {
+    font-size: 0.8rem;
+    margin: 0 8%;
 }
 
 #start-button-wrapper {
@@ -191,19 +202,8 @@ body {
     outline: none;
 }
 
-#start-button-wrapper button img {
-    width: 100%;
-}
-
-.content-card {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 #content-card-donut {
     background-color: #181818;
-    padding: 5px;
 }
 
 #donut-pre {
@@ -212,8 +212,6 @@ body {
     background-color: #181818;
     color: white;
     width: 100%;
-    border-radius: 8px;
-    margin: auto 0;
 }
 
 
