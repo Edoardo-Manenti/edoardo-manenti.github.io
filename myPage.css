@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto Slab', serif;
     background-color: #25252a;
     box-sizing: border-box;
+    margin:0;
 }
 
 #fixed-header {
@@ -69,20 +70,21 @@ body {
 }
 
 #avatar div {
+    position: relative;
     overflow: hidden;
     width: 25vh;
     height: 25vh;
     margin: 0 auto;
     background-color: #f3f7fb;
     border-radius: 50% 50%  33% 33%;
-    padding: 1.2% 1.2% 0;
+    padding: 1.2%;
     z-index: -1;
 }
 
 #avatar img {
+    position: absolute;
     width: 100%;
     height: auto;
-    margin-bottom: -4px;
     z-index: 0;
 }
 
@@ -128,10 +130,16 @@ body {
 
 .card-project {
     display: flex;
-    column-gap: 10%;
+    column-gap: 9%;
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin: 5vh 5% 5vh 5%;
+    margin: 5vh 0;
+}
+
+.card-project::before,
+.card-project::after {
+    content: '';
+    padding: 0.5px;
 }
 
 .card-project::-webkit-scrollbar {
@@ -143,17 +151,17 @@ body {
     position: relative;
     width: 80%;
     aspect-ratio: 1;
-    margin: auto 0;
     box-sizing: border-box;
     border-radius: 5%;
 }
+
 
 #desc-card {
     background-color: white;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 4%;
+    row-gap: 5%;
 }
 
 #desc-card h1 {
@@ -204,6 +212,9 @@ body {
 
 #content-card-donut {
     background-color: #181818;
+    display: block;
+    overflow: hidden;
+    margin: auto;
 }
 
 #donut-pre {
@@ -212,6 +223,7 @@ body {
     background-color: #181818;
     color: white;
     width: 100%;
+    margin: 0;
 }
 
 
