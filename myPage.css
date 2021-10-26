@@ -163,10 +163,11 @@ body {
 
 #content-card-donut button {
     position: absolute;
-    justify-content: center;
     background-color: #CFA716;
     background-image: url(https://img.icons8.com/dotty/80/000000/play.png);
-    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
     top: 3%; right: 3%;
     width: 15%;
     aspect-ratio: 1;
