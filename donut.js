@@ -16,6 +16,7 @@ function setup(){
     var magic_num = 1.75;
     var pre_width = document.getElementById("content-card-donut").offsetWidth -5;
     var font_size = pre_width*magic_num/80;
+    font_size = font_size > 13 ? 13 : font_size;
     pre.setAttribute("style", "font-size: " + font_size + "px;");
 
 
