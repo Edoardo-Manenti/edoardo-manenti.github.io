@@ -41,6 +41,18 @@ body {
     align-items: center;
 }
 
+#particles-js {
+    display: flex;
+    position: absolute;
+    top: 0; left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
 #presentation-bg {
     display:flex;
     justify-content: center;
