@@ -130,7 +130,7 @@ body {
 
 .card-project {
     display: flex;
-    column-gap: 9%;
+    column-gap: 5%;
     flex-wrap: nowrap;
     overflow-x: auto;
     margin: 5vh 0;
@@ -139,7 +139,7 @@ body {
 .card-project::before,
 .card-project::after {
     content: '';
-    padding: 0.5px;
+    padding: 2vw;
 }
 
 .card-project::-webkit-scrollbar {
