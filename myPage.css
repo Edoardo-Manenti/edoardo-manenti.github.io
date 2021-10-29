@@ -50,7 +50,7 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: -3;
 }
 
 #presentation-bg {
