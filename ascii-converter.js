@@ -1,4 +1,4 @@
-var width_l = 80;
+var width_l = 200;
 var canvas;
 var ctx;
 var pre;
