@@ -171,6 +171,7 @@ body {
     flex: 0 0 auto;
     position: relative;
     margin: 0;
+    overflow: hidden;
     width: 80%;
     max-width: 400px;
     aspect-ratio: 1;
@@ -235,10 +236,9 @@ body {
     outline: none;
 }
 
-#content-card-donut {
+#content-card-donut  {
     background-color: #181818;
     display: block;
-    overflow: hidden;
 }
 
 .isAsciiArt {
