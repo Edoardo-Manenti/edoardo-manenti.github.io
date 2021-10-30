@@ -3,7 +3,7 @@ var canvas;
 var ctx;
 var pre;
 var img;
-var luminanceStr = " .'`^\",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$";
+var luminanceStr = " .'`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$";
 
 function setupAsciiConverter() {
     var defaultImgPath = "woody.png";
