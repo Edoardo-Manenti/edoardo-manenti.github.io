@@ -74,7 +74,8 @@ function renderImage() {
                 b_s += brArray[index];
             }
             var avgBrightness = b_s/(block*block); //compute avg bruightness value
-            output[y*width_l + x] = luminanceStr[luminanceStr.length*(avgBrightness/255)];
+            output[y*width_l + x] = luminanceStr[Math.floor(luminanceStr.length
+                                                            *(avgBrightness/255))];
         }
     }
     print_img(output);
