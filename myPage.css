@@ -2,6 +2,14 @@ html {
     font-size: 1.9vh;   
 }
 
+:root {
+    --bg-color: #25252a;
+    --dark-bg-color: #1e1e22 ;
+    --secondary-color: #3b3b3f;
+    --clear-color: whitesmoke;
+    --accent-color: #CFA716;
+}
+
 body {
     font-family: 'Roboto Slab', serif;
     background-color: #25252a;
@@ -21,7 +29,7 @@ body {
     position: fixed;
     border-radius: 0 0 25% 25%;
     z-index: 100;
-    background-color: #3b3b3f;
+    background-color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -87,7 +95,7 @@ body {
     width: 25vh;
     height: 25vh;
     margin: 0 auto;
-    background-color: #f3f7fb;
+    background-color: var(--clear-color);
     border-radius: 50% 50%  33% 33%;
     padding: 1.2%;
     z-index: -1;
@@ -109,7 +117,7 @@ body {
 }
 
 #presentation-text h1 {
-    color: #CFA716;
+    color: var(--accent-color);
     margin:0 0 ;
     font-weight: 200;
     font-size: 5rem;
@@ -118,7 +126,7 @@ body {
 #presentation-text p{
    width: 100%;
    margin: 0;
-   color: #EDEEFF; 
+   color: var(--clear-color); 
    font-size: 2rem;
 }
 
@@ -146,7 +154,7 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     margin: 5vh 0;
-    padding: 0 2vw;
+    padding: 3vh 2vw;
 }
 
 .card-project::before,
@@ -167,10 +175,11 @@ body {
     aspect-ratio: 1;
     box-sizing: border-box;
     border-radius: 5%;
+    box-shadow: 1rem 1rem 9px #1e1e22;
 }
 
 #desc-card {
-    background-color: white;
+    background-color: var(--clear-color);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +206,7 @@ body {
 
 #content-card-donut button {
     position: absolute;
-    background-color: #CFA716;
+    background-color: var(--accent-color);
     background-image: url(https://img.icons8.com/dotty/80/000000/play.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -303,7 +312,7 @@ body {
 	 top: -5vh;
 	 height: 100%;
 	 width: 50%;
-	 background: white;
+	 background: var(--clear-color);
 }
  .chevron:before {
 	 left: 0;
