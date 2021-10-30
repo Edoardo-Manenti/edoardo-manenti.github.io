@@ -6,7 +6,7 @@ var img;
 var luminanceStr = " .'`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$";
 
 function setupAsciiConverter() {
-    var defaultImgPath = "woody.png";
+    var defaultImgPath = "avatar.png";
     var divWrapper = document.getElementById("ascii-conv-img-wrapper");
     canvas = document.getElementById("img-to-convert");
     ctx = canvas.getContext('2d');
