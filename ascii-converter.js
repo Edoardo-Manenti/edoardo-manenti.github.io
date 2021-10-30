@@ -39,7 +39,7 @@ function setupAsciiConverter() {
 //Formula to calculate brightess level given the RGB values of the pixel
 function calculate_brightness(pxArray, w, h) {
     var brArray = []; // array of brightenss values
-    for(var i=0; i < 4*w*h; i++) {
+    for(var i=0; i < 4*w*h; i+=4) {
         brArray[i/4] = 0.2126*pxArray[i] + 0.7152*pxArray[i+1] 
                         + 0.0722*pxArray[i+2]; // values in range [0..255]
     }
