@@ -1,5 +1,5 @@
 html {
-    font-size: 1.9vh;
+    font-size: 1.9vh;   
 }
 
 body {
@@ -256,7 +256,7 @@ body {
 	column-gap: 2vw;
     }
     
-    #presentation-bg img {display: initial;}
+    #presentation-bg img {display: none;}
 
     #avatar {
 	width: auto;
