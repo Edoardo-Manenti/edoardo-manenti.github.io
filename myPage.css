@@ -252,6 +252,9 @@ body {
     margin: 0;
 }
 
+#ascii-pre {
+    line-height: 1ch;
+}
 /* RESPONSIVE SECTION */
 @media only screen and (min-width: 1000px) {
 
