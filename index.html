@@ -44,7 +44,7 @@
 			<div id="content-card-donut" class="card">
 				<button class="play-button" onclick="start();">
 				</button>
-				<pre id="donut-pre"></pre>
+				<pre id="donut-pre" class="isAsciiArt"></pre>
 			</div>
 			<div id=desc-card class="card">
 				<h1><b>SPINNING DONUT</b></h1>
@@ -54,9 +54,11 @@
 		<div class="card-project">
 			<div id="ascii-conv-img-wrapper" class="card">
 				<button class="play-button" onclick="renderImage();"></button>
-				<canvas id="img-to-convert" width="500px" height="500px"></canvas>
+				<canvas id="img-to-convert"></canvas>
 			</div>
-			<pre id="ascii-pre" class="card"></pre>
+			<div class="card">
+				<pre id="ascii-pre" class="isAsciiArt"></pre>
+			</div>
 		</div>
 	</body>
 	<footer>
