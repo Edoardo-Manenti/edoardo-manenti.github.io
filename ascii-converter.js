@@ -63,7 +63,7 @@ function renderImage() {
     var height_l = h/block;
     var output = []; //char output array
     for(var k=0; k < width_l*height_l; k++){
-        output[k] = k%width_l == width_l-1 ? "\n" : " ";
+        output[k] = k%width_l == 0 && k>0 ? "\n" : " ";
     } //prepare output array with newline characters
     for(var x=0; x<width_l; x++) {
         for(var y=0; y<height_l; y++) {
