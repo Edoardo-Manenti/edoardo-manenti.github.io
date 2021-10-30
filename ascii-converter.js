@@ -59,15 +59,15 @@ function renderImage() {
     var h = canvas.height;
     var imgData = ctx.getImageData(0,0,w,h).data;
     var brArray = calculate_brightness(imgData, w, h);
-    var block = w/width_l;
-    var height_l = h/block;
+    var block = Math.floor(w/width_l);
+    var height_l = Math.floor(h/block);
     var output = []; //char output array
     for(var x=0; x<width_l; x++) {
         for(var y=0; y<height_l; y++) {
             var s_i = block*(y*w + x); // calculate the value of the first pixel of the block
             var b_s = 0; // total brightness sum of the block (needed to calculate the avg brightness)
             for(var i=0; i < block*block; i++) {
-                var index = s_i + (i/block)*w + i%block; // index of the pixel of the block
+                var index = s_i + Math.floor(i/block)*w + i%block; // index of the pixel of the block
                 b_s += brArray[index];
             }
             var avgBrightness = b_s/(block*block); //compute avg bruightness value
