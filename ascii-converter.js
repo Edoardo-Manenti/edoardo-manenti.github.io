@@ -1,4 +1,4 @@
-var width_l = 200;
+var width_l = 100;
 var canvas;
 var ctx;
 var pre;
@@ -30,7 +30,7 @@ function setupAsciiConverter() {
 
     pre = document.getElementById("ascii-pre");
     var magic_num = 1.75;
-    var font_size = divWrapper.offsetWidth*magic_num/80;
+    var font_size = divWrapper.offsetWidth*magic_num/width_l;
     font_size = font_size > 13 ? 13 : font_size;
     pre.setAttribute("style", "font-size: " + font_size + "px");
 
