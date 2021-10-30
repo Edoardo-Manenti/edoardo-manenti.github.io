@@ -49,7 +49,7 @@ function calculate_brightness(pxArray, w, h) {
 function print_img(outputArr) {
     var pre = document.getElementById("ascii-pre");
     for(var i=1; i<= outputArr.length/width_l; i++){
-        outputArr.insert(width_l*i, "\n");
+        outputArr[width_l*i] = "\n";
     }
     pre.innerHTML = outputArr.join(""); 
 }
