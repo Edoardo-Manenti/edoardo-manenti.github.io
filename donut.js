@@ -1,4 +1,4 @@
-function setup(){
+function setupDonut(){
     let PI = 3.1415;
     let WIDTH = 80;
     let HEIGHT = 40;

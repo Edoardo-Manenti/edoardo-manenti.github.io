@@ -7,12 +7,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="myPage.css">
 		<script src="donut.js"></script>
+		<script src="ascii-converter.js"></script>
 		<script src="particles.min.js"></script>
 		<script src="app.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Edoardo Manenti | My Portfolio</title>
 	</head>
-	<body onload="setup();">
+	<body onload="setupDonut(); setupAsciiConverter();">
 		<header id=fixed-header>
 				<a class="nav-list-element" href="">My CV</a>
 				<a class="nav-list-element" href="">Contact Me</a>
@@ -41,7 +42,7 @@
 		<!-- DONUT CARD HERE-->
 		<div class="card-project">
 			<div id="content-card-donut" class="card">
-				<button onclick="start();">
+				<button class="play-button" onclick="start();">
 				</button>
 				<pre id="donut-pre"></pre>
 			</div>
@@ -49,6 +50,13 @@
 				<h1><b>SPINNING DONUT</b></h1>
 				<p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterat.</p>
 			</div>
+		</div>
+		<div class="card-project">
+			<div id="ascii-conv-img-wrapper" class="card">
+				<button class="play-button" onclick="renderImage();"></button>
+				<canvas id="img-to-convert" width="500px" height="500px"></canvas>
+			</div>
+			<pre id="ascii-pre" class="card"></pre>
 		</div>
 	</body>
 	<footer>

@@ -170,6 +170,7 @@ body {
 .card {
     flex: 0 0 auto;
     position: relative;
+    margin: 0;
     width: 80%;
     max-width: 400px;
     aspect-ratio: 1;
@@ -204,7 +205,7 @@ body {
     text-align: right;
 }
 
-#content-card-donut button {
+.play-button {
     position: absolute;
     background-color: var(--accent-color);
     background-image: url(https://img.icons8.com/dotty/80/000000/play.png);
@@ -223,12 +224,12 @@ body {
     border-radius: 100%;
 }
 
-#content-card-donut button:hover {
+.play-button:hover {
     box-shadow: 5px 5px 20px -5px black;
     transform: scale(1.03);
 }
 
-#content-card-donut button:active {
+.play-button:active {
     box-shadow: 5px 5px 8px black;
     transform: scale(.98);
     outline: none;
@@ -248,7 +249,6 @@ body {
     width: 100%;
     margin: 0;
 }
-
 
 /* RESPONSIVE SECTION */
 
