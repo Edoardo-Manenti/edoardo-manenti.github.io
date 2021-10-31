@@ -180,6 +180,7 @@ body {
     box-sizing: border-box;
     border-radius: 5%;
     box-shadow: 1rem 1rem 9px #1e1e22;
+    display: flex;
 }
 
 #desc-card {
@@ -248,7 +249,6 @@ body {
     text-align: center;
     background-color: #181818;
     color: white;
-    width: 100%;
     margin: 0;
 }
 
